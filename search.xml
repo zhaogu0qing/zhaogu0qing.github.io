@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>代码版本回滚----记一次Git回滚版本的事故</title>
+      <link href="/2019/03/30/Git%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A-%E8%AE%B0%E4%B8%80%E6%AC%A1Git%E5%9B%9E%E6%BB%9A%E7%89%88%E6%9C%AC%E7%9A%84%E4%BA%8B%E6%95%85/"/>
+      <url>/2019/03/30/Git%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A-%E8%AE%B0%E4%B8%80%E6%AC%A1Git%E5%9B%9E%E6%BB%9A%E7%89%88%E6%9C%AC%E7%9A%84%E4%BA%8B%E6%95%85/</url>
+      
+        <content type="html"><![CDATA[<p> 上周五，由于我在Git正式版本回滚的时候错误的回滚到了测试分支的commit，导致更新出现问题。最后在同事的帮助下顺利找到了正确的回退版本后解决了问题。这也是由于我对git版本回退的认识不足导致的。特写这个专题帮助我记住这个版本回退的正确用法。</p><h2 id="想回到当前分支的上一个版本？"><a href="#想回到当前分支的上一个版本？" class="headerlink" title="想回到当前分支的上一个版本？"></a>想回到当前分支的上一个版本？</h2><h3 id="1-git-reset-–hard-HEAD-1"><a href="#1-git-reset-–hard-HEAD-1" class="headerlink" title="1. git reset –hard HEAD~1"></a>1. git reset –hard HEAD~1</h3><p> 不留痕迹的回滚，不会在 git log中有痕迹。只能在git reflog中查看你的本地提交。</p><h3 id="2-git-revert-HEAD-1"><a href="#2-git-revert-HEAD-1" class="headerlink" title="2. git revert HEAD~1"></a>2. git revert HEAD~1</h3><p> 还原的同时会有一个新提交。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2019/03/28/hello-world/"/>
       <url>/2019/03/28/hello-world/</url>
